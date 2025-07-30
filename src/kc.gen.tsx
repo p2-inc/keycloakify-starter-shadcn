@@ -27,25 +27,25 @@ export const kcEnvDefaults: Record<KcEnvName, string> = {};
 export type KcContext = import("./login/KcContext").KcContext;
 
 declare global {
-    interface Window {
-        kcContext?: KcContext;
-    }
+  interface Window {
+    kcContext?: KcContext;
+  }
 }
 
 export const KcLoginPage = lazy(() => import("./login/KcPage"));
 
 export function KcPage(props: { kcContext: KcContext; fallback?: ReactNode }) {
-    const { kcContext, fallback } = props;
-    return (
-        <Suspense fallback={fallback}>
-            {(() => {
-                switch (kcContext.themeType) {
-                    case "login":
-                        return <KcLoginPage kcContext={kcContext} />;
-                }
-            })()}
-        </Suspense>
-    );
+  const { kcContext, fallback } = props;
+  return (
+    <Suspense fallback={fallback}>
+      {(() => {
+        switch (kcContext.themeType) {
+          case "login":
+            return <KcLoginPage kcContext={kcContext} />;
+        }
+      })()}
+    </Suspense>
+  );
 }
 
 // NOTE: This is exported here only because in Webpack environnement it works differently
