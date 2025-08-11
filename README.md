@@ -4,7 +4,7 @@ Get started quickly with a custom shadcn component-driven customized Keycloak th
 
 Read our blog post about why this exists => https://phasetwo.io/blog/shadcn-keycloak-theme
 
-**Uses **
+**Uses**
 
 * [shadcn](https://ui.shadcn.com/)
 * [Tailwind](https://www.tailwindcss.com)
