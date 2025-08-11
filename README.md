@@ -1,8 +1,24 @@
-<p align="center">
-    <i>🚀 <a href="https://keycloakify.dev">Keycloakify</a> v11 starter 🚀</i>
-    <br/>
-    <br/>
-</p>
+# shadcn Theme Starter
+
+Get started quickly with a custom shadcn component-driven customized Keycloak theme.
+
+Read our blog post about why this exists => https://phasetwo.io/blog/shadcn-keycloak-theme
+
+**Uses **
+
+* [shadcn](https://ui.shadcn.com/)
+* [Tailwind](https://www.tailwindcss.com)
+
+**Implements**
+
+* Initial project setup
+* Login page is converted
+* Baseline components from shadcn to enable login page
+* Basic ejected stories
+
+**Improvements**
+
+* Convert more templates (Help wanted!)
 
 # Quick start
 
