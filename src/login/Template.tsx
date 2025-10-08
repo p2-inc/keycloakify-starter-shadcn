@@ -8,7 +8,7 @@ import { useInitialize } from "keycloakify/login/Template.useInitialize";
 import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -143,7 +143,6 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                 {message.type === "warning" && <AlertTriangle />}
                 {message.type === "error" && <AlertOctagon />}
                 {message.type === "info" && <Info />}
-                <AlertTitle>Heads up!</AlertTitle>
                 <AlertDescription>{kcSanitize(message.summary)}</AlertDescription>
               </Alert>
             )}
